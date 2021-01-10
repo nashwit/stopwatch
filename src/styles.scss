@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'DigitalStopWatch';
+    src: url('/assets/digital-7/digital-7.ttf'); /* IE9 Compat Modes */
+    src: url('/assets/digital-7/digital-7\ \(mono\).ttf'); /* IE6-IE8 */
+  }
+
+body{
+    background-color:rgb(51, 51, 51) ;
+    font-family:'DigitalStopWatch';
+    display: flex;
+    justify-content: center;
+}

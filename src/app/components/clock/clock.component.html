@@ -1,0 +1,5 @@
+<div class="clock">
+    <span>
+{{clock.mm | paddzero}}<span [ngClass]="{'isRuning':isRuning}">:</span>{{clock.ss | paddzero}}<span [ngClass]="{'isRuning':isRuning}">.</span>{{clock.ms | paddzero}}
+    </span>
+</div>

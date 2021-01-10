@@ -1,0 +1,7 @@
+<div *ngIf="laps">
+    <div class="lap" *ngFor="let lap of laps">
+        {{lap.time.mm | paddzero}}:{{lap.time.ss | paddzero}}.{{lap.time.ms | paddzero}}
+        <button (click)="removeLap(lap.id)">REMOVE</button>
+    </div>
+    
+</div>

@@ -1,0 +1,14 @@
+<div class="controls">
+        <div class="big btn" *ngIf="!isRuning" (click)="startStopWatch()">
+            <span class="center"><fa-icon [icon]="faPlay"></fa-icon> Play</span>
+        </div>
+        <div class="big btn" *ngIf="isRuning" (click)="pauseStopWatch()">
+            <span class="center"><fa-icon [icon]="faPause"></fa-icon> Pause</span>
+        </div>
+        <div class="small btn borders" (click)="addLap()">
+            <fa-icon [icon]="faStopwatch"></fa-icon>
+        </div>
+        <div class="small btn" (click)="clearAll()">
+            <fa-icon [icon]="faTrash"></fa-icon>
+        </div>
+</div>
